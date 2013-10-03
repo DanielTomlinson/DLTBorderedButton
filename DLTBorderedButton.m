@@ -16,10 +16,10 @@
     if (self) {
         // Initialization code
         self.borderColor            = [UIColor colorFromHexString:@"00BB44"];
-        self.selectedBorderColor    = [self.borderColor darken:14];
+        self.selectedBorderColor    = [self.borderColor darken:28];
         
         self.fillColor              = UIColor.clearColor;
-        self.selectedFillColor      = [self.fillColor darken:14];
+        self.selectedFillColor      = [self.fillColor darken:28];
         
         
         UIColor *textColor = self.borderColor;
