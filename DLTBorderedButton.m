@@ -1,7 +1,3 @@
-//
-//  ILTokenizedButton.m
-//  IdeaList
-//
 //  Created by Daniel Tomlinson on 03/10/2013.
 //  Copyright (c) 2013 Daniel Tomlinson. All rights reserved.
 //
