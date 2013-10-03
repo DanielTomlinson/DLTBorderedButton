@@ -1,7 +1,3 @@
-//
-//  ILTokenizedButton.m
-//  IdeaList
-//
 //  Created by  Danielle Lancashireon 03/10/2013.
 //  Copyright (c) 2013 Danielle Lancashire. All rights reserved.
 //
