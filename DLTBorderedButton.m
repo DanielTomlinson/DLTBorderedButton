@@ -6,35 +6,49 @@
 
 @implementation DLTBorderedButton
 
-- (id)initWithFrame:(CGRect)frame
-{
+- (id)initWithFrame:(CGRect)frame {
+	
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
-        self.borderColor            = [UIColor colorFromHexString:@"00BB44"];
-        self.selectedBorderColor    = [self.borderColor darken:28];
-        
-        self.fillColor              = UIColor.clearColor;
-        self.selectedFillColor      = [self.fillColor darken:28];
-        
-        
-        UIColor *textColor = self.borderColor;
-        UIColor *selectedTextColor = self.selectedBorderColor;
-        
-        if (self.fillColor != UIColor.clearColor) {
-            textColor = UIColor.whiteColor;
-        }
-        
-        if (self.selectedFillColor != UIColor.clearColor) {
-            selectedTextColor = [self.selectedFillColor invert];
-        }
-        
-        [self setTitleColor:textColor forState:UIControlStateNormal];
-        [self setTitleColor:self.selectedBorderColor forState:UIControlStateHighlighted];
-        
-        self.cornerRadius = 4.0f;
+        [self prepare];
     }
     return self;
+}
+
+- (id)initWithCoder:(CGRect)aDecoder {
+	
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        // Initialization code
+        [self prepare];
+    }
+    return self;
+}
+
+- (void) prepare {
+    self.borderColor            = [UIColor colorFromHexString:@"00BB44"];
+    self.selectedBorderColor    = [self.borderColor darken:28];
+        
+    self.fillColor              = UIColor.clearColor;
+    self.selectedFillColor      = [self.fillColor darken:28];
+        
+        
+    UIColor *textColor = self.borderColor;
+    UIColor *selectedTextColor = self.selectedBorderColor;
+        
+    if (self.fillColor != UIColor.clearColor) {
+        textColor = UIColor.whiteColor;
+    }
+        
+    if (self.selectedFillColor != UIColor.clearColor) {
+        selectedTextColor = [self.selectedFillColor invert];
+    }
+        
+    [self setTitleColor:textColor forState:UIControlStateNormal];
+    [self setTitleColor:self.selectedBorderColor forState:UIControlStateHighlighted];
+      
+    self.cornerRadius = 4.0f;
 }
 
 
