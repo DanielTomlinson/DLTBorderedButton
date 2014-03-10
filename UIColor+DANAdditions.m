@@ -2,7 +2,7 @@
 //  UIColor+DANAdditions.m
 //  Vidskiptabladid
 //
-//  Created by  Danielle Lancashireon 26/08/2013.
+//  Created by Danielle Lancashire on 26/08/2013.
 //  Copyright (c) 2013 Danielle Lancashire. All rights reserved.
 //
 
